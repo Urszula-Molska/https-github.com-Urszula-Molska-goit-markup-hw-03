@@ -4,8 +4,11 @@
   --description-item-color: #757575;
   --title-and-footer-color: #ffffff;
   --header-background-color: #ffffff;
+  --portfolio-page-card-background-color: #ffffff;
   --title-field-and-footer-background-color: #2f303a;
   --button-bacground-color: #f5f4fa;
+  --our-team-section-background-color: #f5f4fa;
+  --middle-sections-background-color: #e5e5e5;
   --footer-contacts-color: rgba(255, 255, 255, 0.6);
   --hover-focus-link-text-color: #2196f3;
   --hover-focus-button-text-color: #ffffff;
@@ -66,12 +69,13 @@ header {
 .footer-logo:focus {
   color: var(--hover-focus-link-text-color);
 }
-.title-field-with-button {
+.title-field-with-button-section {
   width: 1600px;
   height: 600px;
   background-color: var(--title-field-and-footer-background-color);
   color: var(--title-and-footer-color);
 }
+
 h1 {
   color: var(--title-and-footer-color);
   font-weight: 900;
@@ -112,18 +116,31 @@ h1 {
 .section-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 3, 0;
+  line-height: 3;
   letter-spacing: 0.03em;
 }
+
+.description-section,
+.what-we-do-section {
+  background-color: var(--middle-sections-background-color);
+}
+.our-team-section {
+  background-color: var(--our-team-section-background-color);
+}
+
 .our-team {
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.357;
   letter-spacing: 0.03em;
+}
+
+.our-team-item {
   font-weight: 500;
 }
-.our-team-item {
+.our-team-item-description {
   color: var(--description-item-color);
 }
+
 .footer {
   color: var(--footer-color);
   background-color: var(--title-field-and-footer-background-color);
@@ -160,4 +177,24 @@ h1 {
   line-height: 1.71;
   width: 270px;
   height: 75px;
+}
+.portfolio-page-main {
+  background-color: var(--middle-sections-background-color);
+}
+.portfolio-page-description {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.portfolio-page-description-item {
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
+  color: var(--description-item-color);
+}
+.portfolio-page-card {
+  width: 370px;
+  height: 404px;
+  background-color: var(--portfolio-page-card-background-color);
 }
