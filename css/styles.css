@@ -1,32 +1,25 @@
 :root {
   --brand-color: #212121;
-  --header-contacts-color: #757575;
-  --description-item-color: #757575;
-  --title-and-footer-color: #ffffff;
-  --header-background-color: #ffffff;
-  --portfolio-page-card-background-color: #ffffff;
-  --title-field-and-footer-background-color: #2f303a;
-  --button-bacground-color: #f5f4fa;
-  --our-team-section-background-color: #f5f4fa;
-  --middle-sections-background-color: #e5e5e5;
-  --footer-contacts-color: rgba(255, 255, 255, 0.6);
-  --hover-focus-link-text-color: #2196f3;
-  --hover-focus-button-text-color: #ffffff;
-  --hover-focus-button-background-color: #2196f3;
-  --web-part-of-logo-color: #2196f3;
+  --text-color-1: #757575;
+  --text-color-2: #ffffff;
+  --text-color-3: rgba(255, 255, 255, 0.6);
+  --text-hover-color: #2196f3;
+  --brand-background-color: #ffffff;
+  --background-color-1: #2f303a;
+  --bacground-color-2: #f5f4fa;
+  --background-color-3: #e5e5e5;
 }
 
 body {
   font-family: 'Roboto', 'Verdana', 'Tahoma', sans-serif;
   color: var(--brand-color);
-
   font-size: 14px;
   font-weight: 400;
   width: 1600px;
   height: 80px;
 }
-header {
-  background-color: var(--header-background-color);
+.page-header {
+  background-color: var(--brand-background-color);
 }
 .logo {
   font-family: 'Raleway';
@@ -36,7 +29,7 @@ header {
   letter-spacing: 0.03em;
 }
 .web-part-of-logo {
-  color: var(--web-part-of-logo-color);
+  color: var(--text-hover-color);
 }
 .header-logo {
   text-decoration: none;
@@ -44,20 +37,17 @@ header {
   font-family: 'Raleway';
 }
 
-.header-without-logo {
+.menu-item {
+  text-decoration: none;
+  color: var(--brand-color);
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
 
-.menu-item {
-  text-decoration: none;
-  color: var(--brand-color);
-}
-
 .header-contacts-item {
   text-decoration: none;
-  color: var(--header-contacts-color);
+  color: var(--text_color_1);
 }
 .header-logo:hover,
 .header-logo:focus,
@@ -67,17 +57,17 @@ header {
 .header-contacts-item:focus,
 .footer-logo:hover,
 .footer-logo:focus {
-  color: var(--hover-focus-link-text-color);
+  color: var(--text-hover-color);
 }
 .title-field-with-button-section {
   width: 1600px;
   height: 600px;
-  background-color: var(--title-field-and-footer-background-color);
-  color: var(--title-and-footer-color);
+  background-color: var(--background-color-1);
+  color: var(--text-color-2);
 }
 
-h1 {
-  color: var(--title-and-footer-color);
+.headline {
+  color: var(--text-color-2);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -91,10 +81,7 @@ h1 {
   height: 120px;
 }
 
-.button {
-  background-color: var(--button-bacground-color);
-}
-.zamow-usluge {
+.button-zamow-usluge {
   width: 200px;
   height: 50px;
   align-items: center;
@@ -102,16 +89,26 @@ h1 {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
+  color: var(--text-color-2);
+  background-color: var(--text-hover-color);
+  border: none;
 }
 .submenu-button {
   width: 114px;
   height: 38px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  background-color: var(--bacground-color-2);
+  border: none;
 }
 
-.button:hover,
-.button:focus {
-  color: var(--hover-focus-button-text-color);
-  background-color: var(--hover-focus-button-background-color);
+.submenu-button:hover,
+.submenu-button:focus {
+  color: var(--text-color-2);
+  background-color: var(--text-hover-color);
 }
 .section-title {
   font-weight: 700;
@@ -120,12 +117,12 @@ h1 {
   letter-spacing: 0.03em;
 }
 
-.description-section,
+.description,
 .what-we-do-section {
-  background-color: var(--middle-sections-background-color);
+  background-color: var(--brand-background-color);
 }
 .our-team-section {
-  background-color: var(--our-team-section-background-color);
+  background-color: var(--background-color-2);
 }
 
 .our-team {
@@ -138,48 +135,48 @@ h1 {
   font-weight: 500;
 }
 .our-team-item-description {
-  color: var(--description-item-color);
+  color: var(--text-color_1);
 }
 
 .footer {
-  color: var(--footer-color);
-  background-color: var(--title-field-and-footer-background-color);
+  color: var(--text-color-2);
+  background-color: var(--background-color-1);
   width: 1600px;
   height: 252px;
   line-height: 1.71;
 }
 .footer-logo {
   text-decoration: none;
-  color: var(--title-and-footer-color);
+  color: var(--text-color-2);
 }
 .address-details {
-  color: var(--title-and-footer-color);
+  color: var(--text-color-2);
 }
 .footer-contacts {
-  color: var(--footer-contacts-color);
+  color: var(--text-color-3);
 }
 .footer-contacts-item {
   text-decoration: none;
-  color: var(--footer-contacts-color);
+  color: var(--text-color-3);
 }
 .footer-contacts-item:hover,
 .footer-contacts-item:focus {
-  color: var(--hover-focus-link-text-color);
+  color: var(--text-hover-color);
 }
-.description {
+.description-title {
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-.description-item {
-  color: var(--description-item-color);
+.description-subtitle {
+  color: var(--text-color-1);
   line-height: 1.71;
   width: 270px;
   height: 75px;
 }
 .portfolio-page-main {
-  background-color: var(--middle-sections-background-color);
+  background-color: var(--brand-background-color);
 }
 .portfolio-page-description {
   font-weight: 700;
@@ -191,10 +188,10 @@ h1 {
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.03em;
-  color: var(--description-item-color);
+  color: var(--text-color-1);
 }
 .portfolio-page-card {
   width: 370px;
   height: 404px;
-  background-color: var(--portfolio-page-card-background-color);
+  background-color: var(--brand-background-color);
 }
