@@ -11,18 +11,22 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
     <link href="css/styles.css" rel="stylesheet" />
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header container">
       <a class="logo header-logo" href="index.html">
         <h3><span class="web-part-of-logo">Web</span>Studio</h3></a
       >
       <nav class="menu">
-        <ul>
-          <li><a class="menu-item" href="Agencja">Agencja</a></li>
+        <ul class="menu-block">
+          <li><a class="menu-item" href="">Agencja</a></li>
           <li><a class="menu-item" href="portfolio.html">Portfolio</a></li>
-          <li><a class="menu-item" href="Kontakt">Kontakt</a></li>
+          <li><a class="menu-item" href="">Kontakt</a></li>
         </ul>
       </nav>
       <ul class="header-contacts">
@@ -33,48 +37,46 @@
       </ul>
     </header>
     <main>
-      <section class="title-field-with-button-section">
-        <div class="title">
-          <h1 class="headline">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-          <button class="button-zamow-usluge" type="button">Zamów usługę</button>
-        </div>
+      <section class="baner-section">
+        <h1 class="baner-headline">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
+        <button class="button-zamow-usluge" type="button">Zamów usługę</button>
       </section>
-      <section class="description">
-        <ul class="description-list">
-          <li class="description-item">
-            <h4 class="description-title">LOREM IPSUM</h4>
-            <p class="description-subtitle">
+      <section class="lorem-ipsum container">
+        <ul class="lorem-ipsum-list">
+          <li class="lorem-ipsum-item">
+            <h4 class="lorem-ipsum-title">LOREM IPSUM</h4>
+            <p class="lorem-ipsum-subtitle">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
               sodales dui. Interdum et malesuada
             </p>
           </li>
-          <li class="description-item">
-            <h4 class="description-title">LOREM IPSUM</h4>
-            <p class="description-subtitle">
+          <li class="lorem-ipsum-item">
+            <h4 class="lorem-ipsum-title">LOREM IPSUM</h4>
+            <p class="lorem-ipsum-subtitle">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
               sodales dui. Interdum et malesuada
             </p>
           </li>
-          <li class="description-item">
-            <h4 class="description-title">LOREM IPSUM</h4>
-            <p class="description-subtitle">
+          <li class="lorem-ipsum-item">
+            <h4 class="lorem-ipsum-title">LOREM IPSUM</h4>
+            <p class="lorem-ipsum-subtitle">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
               sodales dui. Interdum et malesuada
             </p>
           </li>
-          <li class="description-item">
-            <h4 class="description-title">LOREM IPSUM</h4>
-            <p class="description-subtitle">
+          <li class="lorem-ipsum-item">
+            <h4 class="lorem-ipsum-title">LOREM IPSUM</h4>
+            <p class="lorem-ipsum-subtitle">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
               sodales dui. Interdum et malesuada
             </p>
           </li>
         </ul>
       </section>
-      <section class="what-we-do-section">
-        <h2 class="section-title">Czym się zajmujemy</h2>
-        <ul>
-          <li>
+      <section class="what-we-do-section section container">
+        <h2 class="what-we-do-title">Czym się zajmujemy</h2>
+        <ul class="what-we-do-list">
+          <li class="what-we-do-item">
             <img
               src="images/close-up-image-programer-working-his-desk-office_.jpg"
               alt="Close-up image of programmer working at his desk"
@@ -82,7 +84,7 @@
               height="294"
             />
           </li>
-          <li>
+          <li class="what-we-do-item">
             <img
               src="images/web-ui-designers-are-developing-application-smartphones-team-creators-is-working-interface-mobile-phones_.jpg"
               alt="Web ui designer is developing application for smartphones"
@@ -90,7 +92,7 @@
               height="294"
             />
           </li>
-          <li>
+          <li class="what-we-do-item">
             <img
               src="images/creative-artist-web-design-with-working-colour-selection-graphic-tablet_.jpg"
               alt="Creative artist is working on colour selection graphic tablet"
@@ -100,11 +102,11 @@
           </li>
         </ul>
       </section>
-      <section class="our-team-section">
-        <h2 class="section-title">Nasz zespół</h2>
-        <ul>
-          <li class="our-team">
-            <figure>
+      <section class="our-team-section section container">
+        <h2 class="our-team-title">Nasz zespół</h2>
+        <ul class="our-team-card-list container">
+          <li class="our-team-card">
+            <figure class="our-team-picture">
               <img
                 src="images/product_designer.jpg"
                 alt="picture of Product Designer"
@@ -112,13 +114,13 @@
                 height="260"
               />
               <figcaption>
-                <h3 class="our-team-item">John Doe</h3>
-                <p class="our-team-item-description">Product Designer</p>
+                <h3 class="our-team-name">John Doe</h3>
+                <p class="our-team-position">Product Designer</p>
               </figcaption>
             </figure>
           </li>
-          <li class="our-team">
-            <figure>
+          <li class="our-team-card">
+            <figure class="our-team-picture">
               <img
                 src="images/frontend_developer.jpg"
                 alt="picture of Frontend Developer"
@@ -126,13 +128,13 @@
                 height="260"
               />
               <figcaption>
-                <h3 class="our-team-item">John Doe</h3>
-                <p class="our-team-item-description">Frontend Developer</p>
+                <h3 class="our-team-name">John Doe</h3>
+                <p class="our-team-position">Frontend Developer</p>
               </figcaption>
             </figure>
           </li>
-          <li class="our-team">
-            <figure>
+          <li class="our-team-card">
+            <figure class="our-team-picture">
               <img
                 src="images/marketing.jpg"
                 alt="picture of Marketing Specialist"
@@ -140,13 +142,13 @@
                 height="260"
               />
               <figcaption>
-                <h3 class="our-team-item">John Doe</h3>
-                <p class="our-team-item-description">Marketing</p>
+                <h3 class="our-team-name">John Doe</h3>
+                <p class="our-team-position">Marketing</p>
               </figcaption>
             </figure>
           </li>
-          <li class="our-team">
-            <figure>
+          <li class="our-team-card">
+            <figure class="our-team-picture">
               <img
                 src="images/ui_designer.jpg"
                 alt=" picture of UI Designer"
@@ -154,8 +156,8 @@
                 height="260"
               />
               <figcaption>
-                <h3 class="our-team-item">John Doe</h3>
-                <p class="our-team-item-description">UI Designer</p>
+                <h3 class="our-team-name">John Doe</h3>
+                <p class="our-team-position">UI Designer</p>
               </figcaption>
             </figure>
           </li>
@@ -163,18 +165,20 @@
       </section>
     </main>
     <footer class="footer">
-      <a class="logo footer-logo" href="index.html"
-        ><h3><span class="web-part-of-logo">Web</span>Studio</h3></a
-      >
-      <address class="address-details">m. Warszawa, Aleje Jerozolimskie 21</address>
-      <div class="footer-contacts">
-        <address>
-          <a class="footer-contacts-item" href="mailto:info@example.com">info@example.com</a>
-        </address>
-        <address>
-          <a class="footer-contacts-item" href="tel:+48111111111">+48 111 111 111</a>
-        </address>
-      </div>
+      <section class="footer-box container">
+        <a class="logo footer-logo" href="index.html"
+          ><h3><span class="web-part-of-logo">Web</span>Studio</h3></a
+        >
+        <address class="address-details">m. Warszawa, Aleje Jerozolimskie 21</address>
+        <div class="footer-contacts">
+          <address>
+            <a class="footer-contacts-item" href="mailto:info@example.com">info@example.com</a>
+          </address>
+          <address>
+            <a class="footer-contacts-item" href="tel:+48111111111">+48 111 111 111</a>
+          </address>
+        </div>
+      </section>
     </footer>
   </body>
 </html>

@@ -11,18 +11,22 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
     <link href="css/styles.css" rel="stylesheet" />
   </head>
   <body>
-    <header class="page-header">
-      <a class="logo header-logo" href="index.html"
-        ><h3><span class="web-part-of-logo">Web</span>Studio</h3></a
+    <header class="page-header container">
+      <a class="logo header-logo" href="index.html">
+        <h3><span class="web-part-of-logo">Web</span>Studio</h3></a
       >
       <nav class="menu">
-        <ul>
-          <li><a class="menu-item" href="Agencja">Agencja</a></li>
+        <ul class="menu-block">
+          <li><a class="menu-item" href="">Agencja</a></li>
           <li><a class="menu-item" href="portfolio.html">Portfolio</a></li>
-          <li><a class="menu-item" href="Kontakt">Kontakt</a></li>
+          <li><a class="menu-item" href="">Kontakt</a></li>
         </ul>
       </nav>
       <ul class="header-contacts">
@@ -32,9 +36,9 @@
         <li><a class="header-contacts-item" href="tel:+48111111111">+48 111 111 111</a></li>
       </ul>
     </header>
-    <main>
+    <main class="section container">
       <section class="portfolio-page-submenu">
-        <ul>
+        <ul class="submenu-list-container">
           <li><button class="submenu-button" type="button">Wszystkie</button></li>
           <li><button class="submenu-button" type="button">Strony</button></li>
           <li><button class="submenu-button" type="button">Aplikacje</button></li>
@@ -43,8 +47,8 @@
         </ul>
       </section>
       <section class="portfolio-page-main">
-        <ul>
-          <li>
+        <ul class="portfolio-card-list">
+          <li class="portfolio-card-list-item">
             <figure class="portfolio-page-card">
               <img
                 src="images/portfolio1.jpg"
@@ -58,7 +62,7 @@
               </figcaption>
             </figure>
           </li>
-          <li>
+          <li class="portfolio-card-list-item">
             <figure class="portfolio-page-card">
               <img
                 src="images/portfolio2.jpg"
@@ -72,7 +76,7 @@
               </figcaption>
             </figure>
           </li>
-          <li>
+          <li class="portfolio-card-list-item">
             <figure class="portfolio-page-card">
               <img
                 src="images/portfolio3.jpg"
@@ -86,7 +90,7 @@
               </figcaption>
             </figure>
           </li>
-          <li>
+          <li class="portfolio-card-list-item">
             <figure class="portfolio-page-card">
               <img
                 src="images/portfolio4.jpg"
@@ -100,7 +104,7 @@
               </figcaption>
             </figure>
           </li>
-          <li>
+          <li class="portfolio-card-list-item">
             <figure class="portfolio-page-card">
               <img
                 src="images/portfolio5.jpg"
@@ -114,7 +118,7 @@
               </figcaption>
             </figure>
           </li>
-          <li>
+          <li class="portfolio-card-list-item">
             <figure class="portfolio-page-card">
               <img
                 src="images/portfolio6.jpg"
@@ -128,7 +132,7 @@
               </figcaption>
             </figure>
           </li>
-          <li>
+          <li class="portfolio-card-list-item">
             <figure class="portfolio-page-card">
               <img
                 src="images/portfolio7.jpg"
@@ -142,7 +146,7 @@
               </figcaption>
             </figure>
           </li>
-          <li>
+          <li class="portfolio-card-list-item">
             <figure class="portfolio-page-card">
               <img
                 src="images/portfolio8.jpg"
@@ -156,7 +160,7 @@
               </figcaption>
             </figure>
           </li>
-          <li>
+          <li class="portfolio-card-list-item">
             <figure class="portfolio-page-card">
               <img
                 src="images/portfolio9.jpg"
@@ -174,18 +178,20 @@
       </section>
     </main>
     <footer class="footer">
-      <a class="logo footer-logo" href="index.html">
-        <h3><span class="web-part-of-logo">Web</span>Studio</h3></a
-      >
-      <address class="address-details">m. Warszawa, Aleje Jerozolimskie 21</address>
-      <div class="footer-contacts">
-        <address>
-          <a class="footer-contacts-item" href="mailto:info@example.com">info@example.com</a>
-        </address>
-        <address>
-          <a class="footer-contacts-item" href="tel:+48111111111">+48 111 111 111</a>
-        </address>
-      </div>
+      <section class="footer-box container">
+        <a class="logo footer-logo" href="index.html"
+          ><h3><span class="web-part-of-logo">Web</span>Studio</h3></a
+        >
+        <address class="address-details">m. Warszawa, Aleje Jerozolimskie 21</address>
+        <div class="footer-contacts">
+          <address>
+            <a class="footer-contacts-item" href="mailto:info@example.com">info@example.com</a>
+          </address>
+          <address>
+            <a class="footer-contacts-item" href="tel:+48111111111">+48 111 111 111</a>
+          </address>
+        </div>
+      </section>
     </footer>
   </body>
 </html>
