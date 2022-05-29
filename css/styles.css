@@ -95,7 +95,7 @@ body {
   color: var(--text-hover-color);
 }
 .baner-section {
-  height: 600px;
+  padding: 200px 452px 200px 452px;
   background-color: var(--background-color-1);
   color: var(--text-color-2);
   display: flex;
