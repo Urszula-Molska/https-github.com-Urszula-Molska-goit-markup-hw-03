@@ -36,9 +36,8 @@ body {
   background-color: var(--brand-background-color);
   display: flex;
   align-items: center;
-  justify-items: center;
-  border: 1px solid #ececec;
-  padding-top: 80px;
+  justify-content: space-between;
+  border-bottom: 1px solid #ececec;
 }
 
 .logo {
@@ -52,17 +51,16 @@ body {
   color: var(--text-hover-color);
 }
 .header-logo {
+  display: flex;
   text-decoration: none;
   color: var(--brand-color);
   font-family: 'Raleway';
-  margin-right: 70px;
-  max-height: 80px;
 }
 .menu-block {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  margin-right: 323px;
+  margin-left: -23px;
+  margin-right: -23px;
 }
 
 .menu-item {
